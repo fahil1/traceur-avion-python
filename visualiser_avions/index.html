@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Visualisation des avions</title>
+    <link rel="stylesheet" type="text/css" href="./bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./ol.css">
+    <link rel="stylesheet" type="text/css" href="./main.css">
+
+    <script src="./jquery.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script src="./ol.js"></script>
+
+    <script src="./main2.1.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+                <div class="col">
+                        <h1>Localisation des avions</h1>
+                </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <div id="carte">
+                
+            </div>
+          </div>
+          <div class="col-4">
+            <h2>Journal :</h2>
+            <p id="journal"></p>
+            <table>
+              <table _ngcontent-c3="" class="table table-hover">
+                <thead _ngcontent-c3="" class="thead-warning thead-light">
+                  <tr _ngcontent-c3="">
+                    <th _ngcontent-c3="" scope="col">Point</th>
+                    <th _ngcontent-c3="" scope="col">Distance (km)</th>
+                    <th _ngcontent-c3="" scope="col">Angle (°)</th>
+                  </tr>
+                </thead>
+                <tbody _ngcontent-c3="">
+                  <!--bindings={
+                "ng-reflect-ng-for-of": "[object Object],[object Object"
+              }--><tr _ngcontent-c3="">
+                      <td _ngcontent-c3="" scope="row">KONBA</td>
+                      <td _ngcontent-c3="">549.314291000851</td>
+                      <td _ngcontent-c3="">-78.47219067437591</td>
+                  </tr><tr _ngcontent-c3="">
+                      <td _ngcontent-c3="" scope="row">LEPRU</td>
+                      <td _ngcontent-c3="">521.1155665121838</td>
+                      <td _ngcontent-c3="">-69.18075019255423</td>
+                  </tr><tr _ngcontent-c3="">
+                      <td _ngcontent-c3="" scope="row">OSDIV</td>
+                      <td _ngcontent-c3="">498.64129711933066</td>
+                      <td _ngcontent-c3="">-51.67950845990823</td>
+                  </tr><tr _ngcontent-c3="">
+                      <td _ngcontent-c3="" scope="row">SAMAR</td>
+                      <td _ngcontent-c3="">460.1391346753504</td>
+                      <td _ngcontent-c3="">-82.35014091003147</td>
+                  </tr><tr _ngcontent-c3="">
+                      <td _ngcontent-c3="" scope="row">MITLA</td>
+                      <td _ngcontent-c3="">435.3998914811622</td>
+                      <td _ngcontent-c3="">-75.99328914760275</td>
+                  </tr><tr _ngcontent-c3="">
+                      <td _ngcontent-c3="" scope="row">ABTIR</td>
+                      <td _ngcontent-c3="">402.2987586431306</td>
+                      <td _ngcontent-c3="">-47.3536548572713</td>
+                  </tr><tr _ngcontent-c3="">
+                      <td _ngcontent-c3="" scope="row">NEVTU</td>
+                      <td _ngcontent-c3="">443.30709409457694</td>
+                      <td _ngcontent-c3="">-49.44312420280621</td>
+                  </tr>
+                  <tr _ngcontent-c3="">
+                    <td _ngcontent-c3="" scope="row">TERTO</td>
+                    <td _ngcontent-c3="">298.3304864803841</td>
+                    <td _ngcontent-c3="">-96.32533224759958</td>
+                </tr>
+                <tr _ngcontent-c3="">
+                  <td _ngcontent-c3="" scope="row">ERMED</td>
+                  <td _ngcontent-c3="">290.70499244733327</td>
+                  <td _ngcontent-c3="">-9.267013192120842</td>
+              </tr>
+                </tbody>
+              </table>
+            </table>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
