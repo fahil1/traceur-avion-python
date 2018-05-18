@@ -11,6 +11,7 @@ from websocket_server import WebsocketServer
 current_aircraft_dict = {}
 positions = {}
 server = None
+file_dump = open("dump.txt", "a")
 
 
 def db_json():
@@ -131,6 +132,8 @@ class AdsbDecoder :
             json_dump = db_json()
             if server:
                 server.send_message_to_all(json_dump)
+                file_dump.write(json_dump + "\n")
+                file_dump.flush()
         
 
     def run(self):
